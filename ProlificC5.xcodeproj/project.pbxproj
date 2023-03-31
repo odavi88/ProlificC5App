@@ -11,6 +11,10 @@
 		5D32B2A629C7F7B9001F8A6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32B2A529C7F7B9001F8A6A /* ContentView.swift */; };
 		5D32B2A829C7F7B9001F8A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D32B2A729C7F7B9001F8A6A /* Assets.xcassets */; };
 		5D32B2AB29C7F7B9001F8A6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D32B2AA29C7F7B9001F8A6A /* Preview Assets.xcassets */; };
+		5D32B2B529C7F871001F8A6A /* ProlificTaksCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32B2B429C7F871001F8A6A /* ProlificTaksCardModel.swift */; };
+		5D32B2B729C7F9F5001F8A6A /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32B2B629C7F9F5001F8A6A /* TaskCardView.swift */; };
+		5D32B2B929C80413001F8A6A /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32B2B829C80413001F8A6A /* NewTaskView.swift */; };
+		5D32B2BC29C81342001F8A6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32B2BB29C81342001F8A6A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		5D32B2A529C7F7B9001F8A6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D32B2A729C7F7B9001F8A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D32B2AA29C7F7B9001F8A6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D32B2B429C7F871001F8A6A /* ProlificTaksCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProlificTaksCardModel.swift; sourceTree = "<group>"; };
+		5D32B2B629C7F9F5001F8A6A /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		5D32B2B829C80413001F8A6A /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		5D32B2BA29C81254001F8A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5D32B2BB29C81342001F8A6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		5D32B2A229C7F7B9001F8A6A /* ProlificC5 */ = {
 			isa = PBXGroup;
 			children = (
+				5D32B2BB29C81342001F8A6A /* ViewController.swift */,
 				5D32B2A329C7F7B9001F8A6A /* ProlificC5App.swift */,
-				5D32B2A529C7F7B9001F8A6A /* ContentView.swift */,
+				5D32B30329CC811A001F8A6A /* Components */,
+				5D32B2B129C7F802001F8A6A /* ProlificViews */,
+				5D32B2B329C7F820001F8A6A /* ProlificModles */,
+				5D32B30A29CD4366001F8A6A /* ProlificModelView */,
+				5D32B2BA29C81254001F8A6A /* Info.plist */,
 				5D32B2A729C7F7B9001F8A6A /* Assets.xcassets */,
 				5D32B2A929C7F7B9001F8A6A /* Preview Content */,
 			);
@@ -65,6 +79,38 @@
 				5D32B2AA29C7F7B9001F8A6A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D32B2B129C7F802001F8A6A /* ProlificViews */ = {
+			isa = PBXGroup;
+			children = (
+				5D32B2A529C7F7B9001F8A6A /* ContentView.swift */,
+				5D32B2B829C80413001F8A6A /* NewTaskView.swift */,
+			);
+			path = ProlificViews;
+			sourceTree = "<group>";
+		};
+		5D32B2B329C7F820001F8A6A /* ProlificModles */ = {
+			isa = PBXGroup;
+			children = (
+				5D32B2B429C7F871001F8A6A /* ProlificTaksCardModel.swift */,
+			);
+			path = ProlificModles;
+			sourceTree = "<group>";
+		};
+		5D32B30329CC811A001F8A6A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5D32B2B629C7F9F5001F8A6A /* TaskCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5D32B30A29CD4366001F8A6A /* ProlificModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProlificModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D32B2BC29C81342001F8A6A /* ViewController.swift in Sources */,
+				5D32B2B529C7F871001F8A6A /* ProlificTaksCardModel.swift in Sources */,
+				5D32B2B929C80413001F8A6A /* NewTaskView.swift in Sources */,
+				5D32B2B729C7F9F5001F8A6A /* TaskCardView.swift in Sources */,
 				5D32B2A629C7F7B9001F8A6A /* ContentView.swift in Sources */,
 				5D32B2A429C7F7B9001F8A6A /* ProlificC5App.swift in Sources */,
 			);
@@ -270,6 +320,7 @@
 				DEVELOPMENT_TEAM = UUFQ8XM5Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProlificC5/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +350,7 @@
 				DEVELOPMENT_TEAM = UUFQ8XM5Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProlificC5/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
